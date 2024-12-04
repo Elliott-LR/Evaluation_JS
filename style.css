@@ -1,232 +1,204 @@
-/* Supprime les soulignements de texte par défaut pour tous les éléments */
+/* Supprime les soulignements des textes pour tous les éléments */
 * {
     text-decoration: none;
 }
 
-/* Définition de la police globale et suppression des marges/paddings par défaut */
+/* Applique une police par défaut et supprime les marges et les espacements du body */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-
-/*HEADER*/
-/* Style pour l'en-tête de la page */
+/* HEADER */
+/* Style général de l'en-tête */
 header {
-    padding: 20px;
-    /* Espace autour du contenu */
-    background-color: #fff;
-    /* Fond blanc */
-    border-bottom: 1px solid #ddd;
-    /* Ligne séparatrice subtile */
+    padding: 20px; /* Ajoute un espacement interne */
+    background-color: #fff; /* Définit un fond blanc */
+    border-bottom: 1px solid #ddd; /* Ajoute une ligne séparatrice subtile en bas */
 }
 
-/* Taille de la logo dans l'en-tête */
+/* Taille spécifique du logo dans l'en-tête */
 .logo {
     width: 64px;
 }
 
-/* Centre le contenu global */
+/* Centre le contenu à l'intérieur des conteneurs */
 .container {
     text-align: center;
 }
 
 /* Style des liens dans la navigation */
 nav a {
-    color: black;
-    /* Couleur noire pour le texte */
-    text-decoration: none;
-    /* Supprime les soulignements */
+    color: black; /* Texte en noir */
+    text-decoration: none; /* Retire le soulignement par défaut */
 }
 
-/* Liste de navigation horizontale */
+/* Affiche les éléments de navigation sous forme de liste horizontale */
 nav ul {
-    display: inline-block;
-    /* Affiche la liste sur une seule ligne */
-    list-style: none;
-    /* Supprime les puces */
-    padding: 0;
-    /* Supprime le padding interne */
-    margin: 0;
-    /* Supprime le margin externe */
+    display: inline-block; /* Positionne les éléments sur une seule ligne */
+    list-style: none; /* Supprime les puces */
+    padding: 0; /* Retire les marges internes */
+    margin: 0; /* Retire les marges externes */
 }
 
-/* Style des éléments individuels de la liste de navigation */
+/* Style des éléments individuels dans la liste de navigation */
 nav li {
-    display: inline;
-    /* Place les éléments sur une ligne */
-    margin: 0 15px;
-    /* Espacement horizontal entre les liens */
+    display: inline; /* Aligne les éléments côte à côte */
+    margin: 0 15px; /* Ajoute un espacement horizontal entre les éléments */
 }
-
 
 /* HERO */
-/* Section principale avec un fond clair et un contenu centré */
+/* Style de la section principale avec un contenu centré et un fond clair */
 .hero {
-    position: relative;
-    /* Position relative pour des ajustements éventuels */
-    text-align: center;
-    /* Texte centré */
-    background-color: #f5f5f5;
-    /* Couleur de fond gris clair */
-    padding: 50px 20px;
-    /* Espacement interne pour une apparence aérée */
+    position: relative; /* Positionnement pour d'éventuels ajustements */
+    text-align: center; /* Centre le texte */
+    background-color: #f5f5f5; /* Applique un fond gris clair */
+    padding: 50px 20px; /* Ajoute un espacement interne généreux */
 }
 
-/* Titre principal de la section héroïque */
+/* Style du titre principal dans la section héroïque */
 .hero-content h1 {
-    font-size: 5em;
-    /* Texte très large */
-    margin: 0;
-    /* Supprime les marges */
-    letter-spacing: 5px;
-    /* Espacement entre les lettres */
+    font-size: 5em; /* Texte de très grande taille */
+    margin: 0; /* Supprime les marges */
+    letter-spacing: 5px; /* Ajoute un espacement entre les lettres */
 }
 
-/* Sous-titre ou description de la section héroïque */
+/* Style du sous-titre ou de la description */
 .hero-content p {
-    font-size: 1.2em;
-    /* Texte légèrement agrandi */
-    margin: 10px 0;
-    /* Espacement vertical */
+    font-size: 1.2em; /* Texte légèrement agrandi */
+    margin: 10px 0; /* Ajoute un espacement vertical */
 }
 
-/* Image dans la section héroïque */
+/* Taille et espacement pour les images de la section héroïque */
 .hero-content img {
-    width: 800px;
-    /* Largeur fixe pour l'image */
-    margin-top: 20px;
-    /* Espacement au-dessus de l'image */
+    width: 800px; /* Largeur fixe de l'image */
+    margin-top: 20px; /* Ajoute un espacement au-dessus de l'image */
 }
 
-/*SECTION*/
-/* Section des produits mis en avant */
+/* SECTION */
+/* Style de la section présentant les produits en vedette */
 .featured-products {
-    text-align: center;
-    /* Texte centré */
-    padding: 50px 20px;
-    /* Espacement interne */
-    background-color: #fff;
-    /* Fond blanc */
+    text-align: center; /* Centre le contenu */
+    padding: 50px 20px; /* Ajoute un espacement interne */
+    background-color: #fff; /* Fond blanc */
 }
 
-/* Titre de la section des produits */
+/* Titre de la section des produits en vedette */
 .featured-products h2 {
-    font-size: 2em;
-    /* Taille moyenne pour le titre */
-    margin-bottom: 30px;
-    /* Espacement sous le titre */
-    letter-spacing: 2px;
-    /* Espacement entre les lettres */
+    font-size: 2em; /* Taille moyenne du titre */
+    margin-bottom: 30px; /* Ajoute un espacement en dessous */
+    letter-spacing: 2px; /* Espacement supplémentaire entre les lettres */
 }
 
-
-/*PRODUCT*/
-/* Disposition des produits sous forme de grille flexible */
-.products {
-    display: flex;
-    /* Utilisation du modèle Flexbox */
-    justify-content: space-evenly;
-    /* Espacement égal entre les produits */
-    gap: 20px;
-    /* Espacement entre les colonnes */
+/* PRODUCT */
+/* Affiche les produits sous forme de grille avec Flexbox */
+.produits {
+    display: flex; /* Active Flexbox pour une disposition flexible */
+    justify-content: space-evenly; /* Répartit les produits de manière équitable*/
 }
 
-/* Style des conteneurs individuels de produit */
-.product {
-    text-align: center;
-    /* Texte centré */
-    width: 100px;
-    /* Largeur minimale */
+/* Conteneur individuel pour chaque produit */
+.produit {
+    text-align: center; /* Centre le contenu textuel */
+    width: 100px; /* Largeur minimale des produits */
 }
 
 /* Images des produits */
-.product img {
-    width: 100%;
-    /* Adaptation de l'image à son conteneur */
-    max-width: 200px;
-    /* Limite maximale de largeur */
+.produit img {
+    width: 100%; /* Image responsive adaptée au conteneur */
+    max-width: 200px; /* Définit une largeur maximale */
 }
 
-/* Titre des produits */
-.product h3 {
-    font-size: 1.2em;
-    /* Taille moyenne pour les titres */
-    margin: 10px 0;
-    /* Espacement autour des titres */
+/* Style des titres des produits */
+.produit h3 {
+    font-size: 1.2em; /* Texte de taille moyenne */
+    margin: 10px 0; /* Ajoute un espacement vertical */
 }
 
-/* Description des produits */
-.product p {
-    font-size: 1em;
-    /* Taille normale pour le texte */
-    color: #333;
-    /* Couleur grise pour le texte */
+/* Style des descriptions des produits */
+.produit p {
+    font-size: 1em; /* Texte de taille normale */
+    color: #333; /* Couleur grise pour le texte */
 }
 
-/*AVANTAGES CLIENTS*/
-/* Disposition des produits sous forme de grille flexible */
+/* AVANTAGES CLIENTS */
+/* Présente les avantages clients sous forme de grille */
 .clients {
-    display: flex;
-    /* Utilisation du modèle Flexbox */
-    justify-content: space-evenly;
-    /* Espacement égal entre les produits */
-    gap: 20px;
-    /* Espacement entre les colonnes */
+    display: flex; /* Utilise Flexbox pour la disposition */
+    justify-content: center; /* Centre les éléments horizontalement */
+    gap: 20px; /* Ajoute un espacement entre les colonnes */
 }
 
-/* Style des conteneurs individuels de produit */
+/* Conteneur pour un avantage individuel */
 .client {
-    text-align: center;
-    /* Texte centré */
-    width: 100px;
-    /* Largeur minimale */
+    text-align: center; /* Centre le contenu textuel */
+    width: 100px; /* Largeur minimale */
 }
 
-/* Images des produits */
+/* Images des avantages clients */
 .client img {
-    width: 100%;
-    /* Adaptation de l'image à son conteneur */
-    max-width: 200px;
-    /* Limite maximale de largeur */
+    width: 100%; /* Image responsive adaptée au conteneur */
+    max-width: 200px; /* Définit une largeur maximale */
 }
 
-/* Titre des produits */
+/* Titre des avantages clients */
 .client h3 {
-    font-size: 1.2em;
-    /* Taille moyenne pour les titres */
-    margin: 10px 0;
-    /* Espacement autour des titres */
+    font-size: 1.2em; /* Texte de taille moyenne */
+    margin: 10px 0; /* Ajoute un espacement vertical */
 }
 
-/* Description des produits */
+/* Description des avantages clients */
 .client p {
-    font-size: 1em;
-    /* Taille normale pour le texte */
-    color: #333;
-    /* Couleur grise pour le texte */
+    font-size: 1em; /* Texte de taille normale */
+    color: #333; /* Couleur grise */
 }
 
-/*FOOTER*/
-/* Style du pied de page */
+/* SERVICES */
+/* Organisation des services sous forme de grille */
+.services {
+    display: flex; /* Modèle Flexbox */
+    justify-content: space-evenly; /* Répartit les services de manière uniforme */
+    gap: 20px; /* Ajoute un espacement entre les colonnes */
+}
+
+/* Conteneur pour un service individuel */
+.service {
+    text-align: center; /* Centre le contenu textuel */
+    width: 100px; /* Largeur minimale */
+}
+
+/* Images des services */
+.service img {
+    width: 100%; /* Image responsive adaptée au conteneur */
+    max-width: 200px; /* Définit une largeur maximale */
+}
+
+/* Titre des services */
+.service h3 {
+    font-size: 1.2em; /* Texte de taille moyenne */
+    margin: 10px 0; /* Ajoute un espacement vertical */
+}
+
+/* Description des services */
+.service p {
+    font-size: 1em; /* Texte de taille normale */
+    color: #333; /* Couleur grise */
+}
+
+/* TÉMOIGNAGES */
+/* Présente les témoignages sous forme de grille */
+.temoins {
+    display: flex; /* Utilise Flexbox pour la disposition */
+    justify-content: center; /* Centre les témoignages horizontalement */
+    gap: 20px; /* Ajoute un espacement entre les colonnes */
+}
+
+/* FOOTER */
+/* Style général du pied de page */
 footer {
-    background-color: #333;
-    /* Fond sombre */
-    color: #fff;
-    /* Texte en blanc pour le contraste */
-    text-align: center;
-    /* Texte centré */
-    padding: 20px;
-    /* Espacement interne */
-}
-
-/* Logo dans le pied de page */
-.footer-logo {
-    font-size: 1.2em;
-    /* Texte légèrement agrandi */
-    font-weight: bold;
-    /* Texte en gras */
-    margin: 10px 0;
-    /* Espacement autour du logo */
+    background-color: #333; /* Fond sombre */
+    color: #fff; /* Texte en blanc pour contraste */
+    text-align: center; /* Centre le texte */
+    padding: 20px; /* Ajoute un espacement interne */
 }
