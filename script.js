@@ -22,6 +22,13 @@ fetch("sneakers.json")
         données.temoignages.forEach((temoignages) => {
             afficherTemoignages(temoignages);
         });
+
+        affichernomCommercial(données.nomCommercial)
+
+        afficherphraseAccroche(données.phraseAccroche)
+
+        affichertexteAppelAction(données.texteAppelAction)
+
     });
 
 // Fonction pour afficher les produits dans la page
@@ -38,7 +45,6 @@ function afficherProduits(produits) {
                 <h3>${nom}</h3>
                 <p>${description}</p>
             </div>
-
     `;
 
     // Récupère le conteneur des cartes dans la page HTML
@@ -108,4 +114,22 @@ function afficherTemoignages(temoignages) {
 }
 function etoile(note) {
     return "★".repeat(note) + "☆".repeat(5 - note)
+}
+
+// Fonction pour afficher le nom de l'entreprise
+function affichernomCommercial(nomCommercial) {
+    // Ajoute le nom de l'entreprise à la zone du nom de l'entreprise
+    document.querySelector("#nomCommercial").innerHTML = nomCommercial;
+}
+
+// Fonction pour afficher le slogan de l'entreprise
+function afficherphraseAccroche(phraseAccroche) {
+    // Ajoute le slogan à la zone du slogan
+    document.querySelector("#phraseAccroche").innerHTML = phraseAccroche;
+}
+
+// Fonction pour afficher le bouton
+function affichertexteAppelAction(texteAppelAction) {
+    // Ajoute le bouton à la zone du bouton
+    document.querySelector("#texteAppelAction").innerHTML = texteAppelAction;
 }

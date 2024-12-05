@@ -1,6 +1,9 @@
 /* Supprime les soulignements des textes pour tous les éléments */
 * {
     text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 html {
@@ -14,6 +17,14 @@ body {
     padding: 0;
 }
 
+.bgGris{
+    background-color: #ddd;
+}
+
+.paddingTopSection{
+    padding: 100px 0;
+}
+
 /* HEADER */
 /* Style général de l'en-tête */
 header {
@@ -25,6 +36,8 @@ header {
 /* Taille spécifique du logo dans l'en-tête */
 .logo {
     width: 90px;
+    margin: auto;
+    display: block;
 }
 
 /* Centre le contenu à l'intérieur des conteneurs */
@@ -63,9 +76,10 @@ nav li {
 
 /* Style du titre principal dans la section héroïque */
 .hero-content h1 {
-    font-size: 5em; /* Texte de très grande taille */
-    margin: 0; /* Supprime les marges */
+    font-size: 50px; /* Texte de très grande taille */
     letter-spacing: 5px; /* Ajoute un espacement entre les lettres */
+    width: 50%;
+    margin: auto;
 }
 
 /* Style du sous-titre ou de la description */
@@ -84,8 +98,7 @@ nav li {
 /* Style de la section présentant les produits en vedette */
 .featured-products {
     text-align: center; /* Centre le contenu */
-    padding: 50px 20px; /* Ajoute un espacement interne */
-    background-color: #fff; /* Fond blanc */
+    
 }
 
 /* Titre de la section des produits en vedette */
