@@ -3,6 +3,10 @@
     text-decoration: none;
 }
 
+html {
+    scroll-behavior: smooth; /* Ralentir le scroll */
+}
+
 /* Applique une police par défaut et supprime les marges et les espacements du body */
 body {
     font-family: Arial, sans-serif;
@@ -91,7 +95,7 @@ nav li {
     letter-spacing: 2px; /* Espacement supplémentaire entre les lettres */
 }
 
-/* PRODUCT */
+/* PRODUITS */
 /* Affiche les produits sous forme de grille avec Flexbox */
 .produits {
     display: flex; /* Active Flexbox pour une disposition flexible */
@@ -101,13 +105,13 @@ nav li {
 /* Conteneur individuel pour chaque produit */
 .produit {
     text-align: center; /* Centre le contenu textuel */
-    width: 100px; /* Largeur minimale des produits */
+    width: 20%; /* Largeur minimale des produits */
 }
 
 /* Images des produits */
 .produit img {
     width: 100%; /* Image responsive adaptée au conteneur */
-    max-width: 200px; /* Définit une largeur maximale */
+    max-width: 100%; /* Définit une largeur maximale */
 }
 
 /* Style des titres des produits */
@@ -133,13 +137,13 @@ nav li {
 /* Conteneur pour un avantage individuel */
 .client {
     text-align: center; /* Centre le contenu textuel */
-    width: 100px; /* Largeur minimale */
+    width: 20%; /* Largeur minimale */
 }
 
 /* Images des avantages clients */
 .client img {
     width: 100%; /* Image responsive adaptée au conteneur */
-    max-width: 200px; /* Définit une largeur maximale */
+    max-width: 30%; /* Définit une largeur maximale */
 }
 
 /* Titre des avantages clients */
@@ -165,13 +169,13 @@ nav li {
 /* Conteneur pour un service individuel */
 .service {
     text-align: center; /* Centre le contenu textuel */
-    width: 100px; /* Largeur minimale */
+    width: 20%; /* Largeur minimale */
 }
 
 /* Images des services */
 .service img {
     width: 100%; /* Image responsive adaptée au conteneur */
-    max-width: 200px; /* Définit une largeur maximale */
+    max-width: 100%; /* Définit une largeur maximale */
 }
 
 /* Titre des services */
@@ -192,6 +196,16 @@ nav li {
     display: flex; /* Utilise Flexbox pour la disposition */
     justify-content: center; /* Centre les témoignages horizontalement */
     gap: 20px; /* Ajoute un espacement entre les colonnes */
+}
+
+.temoin {
+    text-align: center; /* Centre le contenu textuel */
+    width: 20%; /* Largeur minimale */
+}
+
+.temon img {
+    width: 100%; /* Image responsive adaptée au conteneur */
+    max-width: 200px; /* Définit une largeur maximale */
 }
 
 /* FOOTER */

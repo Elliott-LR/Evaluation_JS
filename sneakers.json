@@ -11,27 +11,27 @@
     {
       "nom": "Sneakers Classic",
       "description": "Adoptez le style classique avec nos sneakers éco-sourcés. Conçues avec des matériaux recyclés, elles allient confort, durabilité et élégance.",
-      "image-url": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/sneakers/sneakers-classic.webp"
+      "image-url": "basket(1).jpg"
     },
     {
       "nom": "Sneakers Urbaines",
       "description": "Affirmez votre style urbain avec nos sneakers tendance. Des designs modernes fabriqués de manière éthique pour une empreinte écologique réduite.",
-      "image-url": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/sneakers/sneakers-urbaines.webp"
+      "image-url": "basket(2).jpg"
     },
     {
       "nom": "Sneakers Légères",
       "description": "Optez pour le confort ultime avec nos sneakers légères. Fabriquées avec des matériaux respirants, elles sont idéales pour une utilisation quotidienne.",
-      "image-url": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/sneakers/sneakers-legeres.webp"
+      "image-url": "basket(3).jpg"
     },
     {
       "nom": "Sneakers Hautes Performance",
       "description": "Atteignez de nouveaux sommets avec nos sneakers hautes performances. Conçues pour offrir un soutien optimal tout en respectant l'environnement.",
-      "image-url": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/sneakers/sneakers-hautes-performance.webp"
+      "image-url": "basket(4).jpg"
     },
     {
       "nom": "Sneakers Vintage Éco-sourcées",
       "description": "Retrouvez le charme du vintage avec nos sneakers éco-sourcées. Des modèles rétro repensés avec des matériaux respectueux de l'environnement.",
-      "image-url": "https://js-dynamic-portfolio-data-makerslab-emlyon-cdweb-8f83155c64a0cc.gitlab.io/images/sneakers/sneakers-vintage-eco-sourcees.webp"
+      "image-url": "basket(5).jpg"
     }
   ],
   "services": [
