@@ -1,7 +1,6 @@
 /* Supprime les soulignements des textes pour tous les éléments */
 * {
     text-decoration: none;
-    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -91,7 +90,7 @@ nav li {
 /* Taille et espacement pour les images de la section héroïque */
 .hero-content img {
     width: 800px; /* Largeur fixe de l'image */
-    margin-top: 20px; /* Ajoute un espacement au-dessus de l'image */
+    margin-top: 10px; /* Ajoute un espacement au-dessus de l'image */
 }
 
 /* SECTION */

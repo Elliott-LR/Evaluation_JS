@@ -22,13 +22,9 @@ fetch("sneakers.json")
         données.temoignages.forEach((temoignages) => {
             afficherTemoignages(temoignages);
         });
-
         affichernomCommercial(données.nomCommercial)
-
         afficherphraseAccroche(données.phraseAccroche)
-
         affichertexteAppelAction(données.texteAppelAction)
-
     });
 
 // Fonction pour afficher les produits dans la page
