@@ -1,49 +1,38 @@
 // J'appelle l'URL du site ou du fichier JSON qui me fournira les données
-fetch("data.json")
+fetch("sneakers.json")
     .then((response) => {
         // La réponse obtenue n'est pas exploitable directement
         // Il faut la transformer en JSON
         return response.json();
     })
-    .then((recettes) => {
-        console.log(recettes);
+    .then((données) => {
+        console.log(données);
         // "recettes" est un tableau contenant plusieurs recettes
         // Je boucle dessus et pour chaque recette :
         // Je l'affiche dans ma page web
-        recettes.forEach((recette) => {
-            afficher(recette);
+        données.produits.forEach((produits) => {
+            afficher(produits);
         });
     });
 
-// Fonction pour afficher une recette dans la page
-function afficher(recette) {
-    // Extraction des données de la recette
-    let nomRecette = recette.nom; // Nom de la recette
-    let image = recette.img; // Lien URL de l'image de la recette
-    let difficulte = recette.difficulte; // Niveau de difficulté de la recette
-    let tempCuisson = recette.tempCuisson; // Temps de cuisson
-    let nbrPersn = recette.portions; // Nombre de portions
-    let ingredients = recette.ingredients; // Liste des ingrédients
-    let etapes = recette.etapes; // Liste des étapes
+// Fonction pour afficher les produits dans la page
+function afficher(produits) {
+    // Extraction des données du produit
+    let nom = produits.nom; // Nom du produit
+    let description = produits.description; // description du produit
+    let image = produits.image; // image du produit
 
-    // Construction de la liste des étapes
-    let listEtapes = "";
-    etapes.forEach((etape) => {
-        listEtapes += `<li>${etape.numeroEtape} - ${etape.descEtape}</li>`;
-    });
-
-    // Construction de la liste des ingrédients
-    let listeIngredients = "";
-    ingredients.forEach((ingredient) => {
-        listeIngredients += `<li>${ingredient.quantite} ${ingredient.unite} -${ingredient.aliment}</li>`;
-    });
-
-    // Construction de la carte HTML pour une recette
+    // Construction de la carte HTML pour un produit
     let carte = `
-            ///////////////MON HTML///////////////
+        <div class="produits">
+            <div class="produit">
+                <img src="assets/${image}" alt="Photo Sneaker">
+                <h3>${nom}</h3>
+                <p>${description}</p>
+            </div>
     `;
 
     // Récupère le conteneur des cartes dans la page HTML
-    let containerCards = document.querySelector(".recipe");
+    let containerCards = document.querySelector(".produits");
     containerCards.innerHTML += carte;
 }

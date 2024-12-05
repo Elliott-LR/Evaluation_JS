@@ -11,27 +11,27 @@
     {
       "nom": "Sneakers Classic",
       "description": "Adoptez le style classique avec nos sneakers éco-sourcés. Conçues avec des matériaux recyclés, elles allient confort, durabilité et élégance.",
-      "image-url": "basket(1).jpg"
+      "image": "basket(1).jpg"
     },
     {
       "nom": "Sneakers Urbaines",
       "description": "Affirmez votre style urbain avec nos sneakers tendance. Des designs modernes fabriqués de manière éthique pour une empreinte écologique réduite.",
-      "image-url": "basket(2).jpg"
+      "image": "basket(2).jpg"
     },
     {
       "nom": "Sneakers Légères",
       "description": "Optez pour le confort ultime avec nos sneakers légères. Fabriquées avec des matériaux respirants, elles sont idéales pour une utilisation quotidienne.",
-      "image-url": "basket(3).jpg"
+      "image": "basket(3).jpg"
     },
     {
       "nom": "Sneakers Hautes Performance",
       "description": "Atteignez de nouveaux sommets avec nos sneakers hautes performances. Conçues pour offrir un soutien optimal tout en respectant l'environnement.",
-      "image-url": "basket(4).jpg"
+      "image": "basket(4).jpg"
     },
     {
       "nom": "Sneakers Vintage Éco-sourcées",
       "description": "Retrouvez le charme du vintage avec nos sneakers éco-sourcées. Des modèles rétro repensés avec des matériaux respectueux de l'environnement.",
-      "image-url": "basket(5).jpg"
+      "image": "basket(5).jpg"
     }
   ],
   "services": [

@@ -18,13 +18,13 @@ body {
 /* Style général de l'en-tête */
 header {
     padding: 20px; /* Ajoute un espacement interne */
-    background-color: #fff; /* Définit un fond blanc */
+    background-color: #333333; /* Définit un fond blanc */
     border-bottom: 1px solid #ddd; /* Ajoute une ligne séparatrice subtile en bas */
 }
 
 /* Taille spécifique du logo dans l'en-tête */
 .logo {
-    width: 64px;
+    width: 90px;
 }
 
 /* Centre le contenu à l'intérieur des conteneurs */
@@ -34,7 +34,7 @@ header {
 
 /* Style des liens dans la navigation */
 nav a {
-    color: black; /* Texte en noir */
+    color: white; /* Texte en noir */
     text-decoration: none; /* Retire le soulignement par défaut */
 }
 
